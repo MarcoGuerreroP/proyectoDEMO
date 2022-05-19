@@ -1,6 +1,10 @@
 # proyectodemo
 
-A new Flutter project.
+El poroyecto esta contruido con FLUTTER version 2.10.5
+
+Consulta un API de - [Pagina del API](https://www.themoviedb.org/)
+
+Obtienen las peliculas que estan en este momento en estreno y sus detalles
 
 ## Getting Started
 
