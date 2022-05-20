@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:proyectodemo/flavors_config.dart';
 import 'package:proyectodemo/utils/theme.dart';
 import 'package:proyectodemo/widgets/screens/details_movie_screen.dart';
 import 'package:proyectodemo/widgets/screens/home_screen.dart';
 import 'package:proyectodemo/widgets/screens/splash_screen.dart';
-import 'flavors_config.dart';
 import 'services/movies_provider.dart';
 
 void main() {
   FlavorsConfig.instance.init(
-      appbarName: 'Catalago de Peliculas',
-      primaryColor: const Color.fromARGB(255, 233, 110, 44),
-      secundaryColor: Colors.lightBlue,
-      iconflavor: const Icon(Icons.rocket_launch));
+      appbarName: 'Catalago de Pelicular DEV',
+      primaryColor: Colors.green,
+      secundaryColor: Colors.amberAccent,
+      iconflavor: const Icon(Icons.settings));
   runApp(const MyAppState());
 }
 
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       textDirection: TextDirection.ltr,
       child: Banner(
         location: BannerLocation.topEnd,
-        message: 'PROD',
+        message: 'DEV',
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Catalago de Peliculas DEMO',

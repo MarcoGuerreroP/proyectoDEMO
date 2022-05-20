@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:proyectodemo/flavors_config.dart';
 import 'package:proyectodemo/services/movies_provider.dart';
 import '../../utils/swiper.dart';
 
@@ -12,8 +13,10 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: FlavorsConfig.instance.primaryColor,
+        leading: FlavorsConfig.instance.iconflavor,
         elevation: 0,
-        title: const Text('Catalago de Peliculas'),
+        title: Text(FlavorsConfig.instance.appbarName),
       ),
       body: SwiperAction(movies: moviesProvider.displayMovie),
     );
