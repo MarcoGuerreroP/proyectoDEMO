@@ -1,11 +1,14 @@
 # proyectodemo
 
-El poroyecto esta contruido con FLUTTER version 2.10.5
+El proyecto esta contruido con FLUTTER version 2.10.5
 
 Consulta un API de - [Pagina del API](https://www.themoviedb.org/)
 
 Obtienen las peliculas que estan en este momento en estreno y sus detalles
 
+Tiene Flavors stagging,dev
+
+Manejador de estado : [Provider](https://pub.dev/packages/provider)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
